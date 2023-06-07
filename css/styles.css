@@ -1,0 +1,594 @@
+@font-face {
+    font-family: 'BEBAS';
+    src: url('/fonts/futura/futura\ medium\ bt.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: BEBAS;
+    
+}
+
+.orange {
+    color: #FFA424;
+}
+
+/* IMAGE GALLERY */
+
+#galleria-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.onama-galleria {
+     width: 1000px;
+     height: 500px;
+     margin: auto;
+     background: #ffffff10;
+}
+
+
+.usluge-galleria {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+/* O nama - home social media links*/
+
+
+#onama-sm .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#onama-sm a.nav-link.active{
+    color: white;
+}
+
+#onama-sm .phone a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+#onama-sm a.nav-link:hover,
+#onama-sm p.nav-link:hover {
+    color: white;
+}
+
+#onama-sm .phone-number a:hover {
+    color: white;
+}
+
+#onama-sm i{
+    color: white;
+}
+/*
+
+
+/*----------------------NAVBAR--------------------------*/
+
+
+#navigation {
+    background-image: url("/img/navbar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#logo {
+    width: 40px;
+}
+
+#logo-hover {
+    display: none;
+    width: 40px;
+}
+
+ .navbar {
+    z-index: 6;
+ }
+  
+
+
+.navbar-nav a {
+    font-family: BEBAS;
+    color: white !important;
+    font-size: small;  
+}
+
+
+
+
+#nav-menu .nav-link:hover {
+    color: #FFA424!important;
+
+}
+
+.navbar a {
+    padding: 5px 0;
+    position: relative;
+}
+
+/*Underline navlinks*/
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #FFA424;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+  
+a.active::before,
+a:hover {
+    transform: scale(1);
+}
+
+
+
+
+/*-----------------O NAMA------------------*/
+
+#onama-home {
+    padding-top: 5rem;
+}
+
+
+
+#onama-background {
+    background: url("/img/house1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+}
+
+#onama-image {
+    max-width: none;
+    height: auto;
+    width: 30rem; 
+}
+
+  
+
+
+/* CARDS */
+
+#onama-cards {
+    background-color: #00000000;
+}
+
+.card {
+    background-color: #00000099;
+    margin-bottom: 1rem;
+}
+
+.card i {
+    color: #FFA424;
+}
+
+.card h3{
+    font-size: medium;
+    color: #FFA424;
+}
+
+.card p {
+    margin-top: 1.5rem;
+    font-size: small;
+    color: #FFFF;
+}
+
+
+
+
+/* --------------USLUGE------------------ */
+
+
+#usluge {
+    margin-top: 8rem;
+}
+
+#usluge p {
+
+    color: #575757;
+}
+
+#usluge img {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    max-width: 15rem;
+}
+
+#usluge-button {
+    margin-top: 3rem;
+    background-color: #FFA424;
+    color: #000000;
+}
+
+#usluge-button:hover{
+    background-color: #de8b1e;
+}
+
+
+/* Arrow Section */
+
+#arrow-section i {
+    color: #FFA424;
+}
+
+
+/*Usluge Images*/
+
+#usluge-images {
+    margin-top: 8rem;
+}
+
+
+
+/* --------------KONTAKT------------------ */
+
+
+#kontakt {
+    margin-top: 8rem;
+
+}
+
+
+/* KONTAKT form */
+
+#kontakt-form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#form-container {
+    width: 100%;
+    display: none;
+}
+
+
+#form-button {
+    background-color: #FFA424;
+    margin-bottom: 3rem;
+}
+
+
+#form-button:hover {
+    background-color: #de8b1e;
+}
+
+
+/* Kontakt cards */
+
+#kontakt-cards {
+    background-color: #ffffff00;
+}
+
+#kontakt .card {
+    background-color: #ffffff99;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#kontakt .card i {
+    color: #FFA424;
+}
+
+#kontakt .card h3{
+    font-size: medium;
+    color: #FFA424;
+}
+
+#kontakt .card p {
+    margin-top: 1.5rem;
+    font-size: small;
+    color: #0a0a0a;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
+
+
+/* --------------FOOTER------------------ */
+
+#footer {
+    height: 10vh;
+    background-image: url("/img/footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#footer-logo {
+    width: 40px;
+}
+
+#footer-logo-hover {
+    display: none;
+    width: 40px;
+}
+
+#footer-sm .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#footer-sm a.nav-link.active{
+    color: white;
+}
+
+#footer-sm .phone a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+#footer-sm a.nav-link:hover,
+#footer-sm p.nav-link:hover {
+    color: white;
+}
+
+#footer-sm .phone-number a:hover {
+    color: white;
+}
+
+#footer-sm i{
+    color: white;
+}
+
+#rijad-contact {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    background-image: url("/img/footer-contact.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#rijad-contact p {
+    color: #ffffff99;
+}
+
+#rijad-contact a {
+    color: #ffffff60;
+    text-decoration: none;
+}
+
+#rijad-contact a:hover {
+    color: #ffffff;
+}
+
+
+
+/* ------------------- MEDIA QUERY ---------------------- */
+
+
+@media (max-width: 999px) {
+
+
+    /* ----O nama---- */
+
+    #onama-home h1 {
+        font-size: 1.5rem;
+    }
+
+    #onama-sm i, #onama-sm .nav-link {
+        font-size: 0.8rem;
+    }
+
+
+    /* minml galleria */
+
+    .onama-galleria {
+        width: 750px;
+        height: 350px;
+        margin: auto;
+        background: #ffffff10;
+    }
+
+   /* cards */
+
+   #onama-cards .card i {
+        font-size: 1.5rem;
+    }
+
+   #onama-cards .card p {
+        font-size: 0.8rem;
+    }
+
+
+   /* -------Usluge--------*/
+
+   #usluge {
+    margin-top: 5rem;
+   }
+
+   #usluge h2 {
+    font-size: 1.5rem;;
+   }
+
+   #usluge p {
+    font-size: 0.8rem;
+   }
+
+   #usluge img {
+    width: 10rem;
+    margin-left: 2rem;
+   }
+
+   #usluge i{
+    font-size: 0.8rem;
+   }
+
+   .arrow-description {
+    font-size: 0.8rem;
+   }
+
+   #usluge-button {
+    font-size: 0.8rem;
+   }
+
+   /*folio galleria*/
+
+    #usluge-images {
+        margin-top: 5rem;
+    }
+
+
+    /* --------Kontakt------- */
+
+    #kontakt-cards i {
+        font-size: 1.5rem;
+    }
+
+    #kontakt-cards .card p {
+        font-size: 0.8rem;
+    }
+
+    #form-button {
+        font-size: 0.9rem;
+    }
+
+
+    /* -------Footer------ */
+
+    #footer-sm i, #footer-sm .nav-link {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    /* ----O nama---- */
+
+    #onama-home h1 {
+        font-size: 1.1rem;
+    }
+
+    #onama-sm i, #onama-sm .nav-link {
+        font-size: 0.4rem;
+    }
+
+
+    /* minml galleria */
+
+    .onama-galleria {
+        width: 500px;
+        height: 250px;
+        margin: auto;
+        background: #ffffff10;
+    }
+
+   /* cards */
+
+   #onama-cards .card i {
+        font-size: 1rem;
+    }
+
+    #onama-cards .card h3 {
+        font-size: 0.8rem;
+    }
+
+   #onama-cards .card p {
+        font-size: 0.5rem;
+    }
+
+
+   /* -------Usluge--------*/
+
+   #usluge {
+    margin-top: 4rem;
+   }
+
+   #usluge h2 {
+    font-size: 1.2rem;;
+   }
+
+   #usluge p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+   }
+
+   #usluge img {
+    width: 7rem;
+    margin-left: 1rem;
+   }
+
+   #usluge i{
+    font-size: 0.7rem;
+   }
+
+   .arrow-description {
+    font-size: 0.7rem;
+   }
+
+   #usluge-button {
+    font-size: 0.6rem;
+   }
+
+   /*folio galleria*/
+
+    #usluge-images {
+        margin-top: 5rem;
+    }
+
+
+    /* --------Kontakt------- */
+    
+    #kontakt {
+        margin-top: 4rem;
+    }
+
+    #kontakt-cards i {
+        font-size: 1.2rem;
+    }
+
+    #kontakt-cards .card p {
+        font-size: 0.8rem;
+    }
+
+    #form-button {
+        font-size: 0.8rem;
+    }
+
+
+    /* -------Footer------ */
+
+    #footer-sm i, #footer-sm .nav-link {
+        font-size: 0.6rem;
+    }
+
+    #rijad-contact {
+        font-size: 0.6rem;
+    }
+
+}
